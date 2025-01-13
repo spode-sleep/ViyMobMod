@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "viy",
+  "version": "${version}",
+
+  "name": "Viy",
+  "description": "Adds a Viy mob that attacks player-controlled Valkyrien Skies 2 contraptions",
+  "authors": [
+    "spode-sleep"
+  ],
+  "contact": {
+    "sources": "https://github.com/spode-sleep/ViyMobMod",
+    "issues": "https://github.com/spode-sleep/ViyMobMod/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/viy/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.spodesleep.viy.ViyMobMod"
+    ],
+    "client": [
+      "net.spodesleep.viy.ViyMobModClient"
+    ]
+  },
+  "mixins": [],
+
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric-api": "*",
+    "minecraft": "~1.20",
+    "java": ">=17",
+    "valkyrienskies": ">=2.1.3-beta.1+a52f38bd68"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
